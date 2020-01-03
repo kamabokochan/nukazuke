@@ -1,12 +1,32 @@
-import { NextPage } from 'next';
+import "../css/styles.styl"
 
-const Home: NextPage<{ userAgent: string }> = ({ userAgent }) => (
-  <h1>Hello world! - user agent: {userAgent}</h1>
-);
+const linkList = [
+  {
+    name: 'github',
+    url: 'https://github.com/kamabokochan'
+  },
+  {
+    name: 'はてなブログ',
+    url: 'https://h-workfront.hatenablog.com/'
+  },
+  {
+    name: 'Qiita',
+    url: 'https://qiita.com/kamabokochan'
+  },
+  {
+    name: 'Twitter',
+    url: 'https://twitter.com/kamabokochanu'
+  }
+]
 
-Home.getInitialProps = async ({ req }) => {
-  const userAgent = req ? req.headers['user-agent'] || '' : navigator.userAgent;
-  return { userAgent };
-};
-
-export default Home;
+export default () =>
+  <div className="root">
+    <div className="profile-image">
+      <img src="kamabokochan.png" alt="" />
+    </div>
+    <ul className="link-list">
+      {
+        linkList.map((list, index) => <li key={index}><a href={list.url}>{list.name}</a></li>)
+      }
+    </ul>
+  </div>
