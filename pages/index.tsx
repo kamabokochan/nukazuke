@@ -1,15 +1,23 @@
 import "../css/styles.styl"
 import linkList from "../public/link.js"
 
-export default () =>
+export default () => (
   <div className="root">
-    <div className="profile-image">
-      <img src="kamabokochan.png" alt="" />
+    <div className="wrap">
+      <div className="icon-wrap">
+        <img src="icon.png" alt="アイコン" width="120" />
+      </div>
+      <ul className="social-list">
+        {linkList.map((list, index) => {
+          return (
+            <li key={index}>
+              <a href={list.url}>
+                <img src={list.icon} alt={list.name} width="40" />
+              </a>
+            </li>
+          );
+        })}
+      </ul>
     </div>
-    <h2>LINK</h2>
-    <ul className="link-list">
-      {
-        linkList.map((list, index) => <li key={index}><a href={list.url}>{list.name}</a></li>)
-      }
-    </ul>
   </div>
+);

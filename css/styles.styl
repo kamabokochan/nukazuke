@@ -1,10 +1,40 @@
 @import '_reset'
 
 .root {
-  width: 500px;
-  margin: auto;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  // background: #faa;
+  background-image: url('/bg.png')
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.profile-image {
-  text-align: center;
+.wrap {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255,255,255,0.5);
+  padding: 24px;
+  margin: 24px;
+  backdrop-filter: blur(4px);
+}
+
+.icon-wrap {
+  width: 120px;
+  border-radius: 50%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.social-list {
+  width: 214px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
 }

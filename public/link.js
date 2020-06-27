@@ -1,18 +1,17 @@
 export default [
   {
-    name: 'github',
-    url: 'https: //github.com/kamabokochan'
+    name: "github",
+    icon: "/social/github.png",
+    url: "https: //github.com/kamabokochan",
   },
   {
-    name: 'はてなブログ',
-    url: 'https: //h-workfront.hatenablog.com/'
+    name: "はてなブログ",
+    icon: "/social/hatena-blog.png",
+    url: "https: //h-workfront.hatenablog.com/",
   },
   {
-    name: 'Qiita',
-    url: 'https: //qiita.com/kamabokochan'
-  },
-  {
-    name: 'Twitter',
-    url: 'https: //twitter.com/kamabokochanu'
+    name: "Twitter",
+    icon: "/social/Twitter.png",
+    url: "https: //twitter.com/kamabokochanu",
   }
-]
+];
