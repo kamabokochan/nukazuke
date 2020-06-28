@@ -5,7 +5,7 @@ export default () => (
   <div className="root">
     <div className="wrap">
       <div className="icon-wrap">
-        <img src="icon.png" alt="アイコン" width="120" />
+        <a href="/"><img src="icon.png" alt="アイコン" width="120" /></a>
       </div>
       <ul className="social-list">
         {linkList.map((list, index) => {
@@ -14,6 +14,7 @@ export default () => (
               <a href={list.url}>
                 <img src={list.icon} alt={list.name} width="40" />
               </a>
+              <p className="social-name">{list.name}</p>
             </li>
           );
         })}

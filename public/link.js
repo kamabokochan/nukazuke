@@ -10,6 +10,11 @@ export default [
     url: "https://h-workfront.hatenablog.com/",
   },
   {
+    name: "note",
+    icon: "/social/note.png",
+    url: "https://note.com/funamarusuisan",
+  },
+  {
     name: "Twitter",
     icon: "/social/Twitter.png",
     url: "https://twitter.com/kamabokochanu",
